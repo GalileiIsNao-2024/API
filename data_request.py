@@ -9,16 +9,19 @@ def get_data(url, credentials):
 
 
 url = "https://www.bitlusion.com/nao/send_nao.php"
-# url = "http://localhost/projects/nao-2024/php/nao/send_nao.php"
 data = {
     "request": "addToCart",
     "user": "galileiisnao",
     "product": "rosa"
 }
 
-# data = {
-#     "request": "allUsers",
-#     "user": "pietro",
-# }
+data = {
+    "request": "checkout",
+    "user": "galileiisnao",
+}
+
+data = {
+    "request": "allUsers"
+}
 
 print(get_data(url, data))
